@@ -116,7 +116,7 @@ body{
     width: 250px;
     height: 200px;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     bottom: 0;
     left: 0;
     right: 0;
@@ -125,6 +125,22 @@ body{
     transition: .3s ease;
     opacity: 0;
     
+}
+
+.cards .card h4 span{
+    font-weight: 700;
+    color: #f0f0f0;
+    box-shadow:  rgba(0,0,0, 0.5);
+    background: ;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translateY(-115px);
+    border: solid 1px #d63c03;
+    background: #d63c03;
 }
 
 .cards .card .card-imgs:hover{
