@@ -20,6 +20,7 @@ body{
     margin-top: 15px;
 }
 .box-cards h2 {
+    width: 100%;
     background: #d63c03;
     background-size: cover;
     padding: 5px;
