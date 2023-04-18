@@ -1,0 +1,16 @@
+
+@media (max-width:1600px){
+   
+   }
+    .footer .grupo-1 {
+        max-width: 992px;
+        width: 100%;
+        margin: 0 auto;
+        display: grid; 
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        padding: 35px 0px;
+        justify-items: center;
+        align-content: center;
+    }
+

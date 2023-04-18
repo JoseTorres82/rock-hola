@@ -7,10 +7,26 @@
 }
 
 body{
-    background-color: #010108;
+    background-color: #000;
 }
 
-
+.box-cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+.box-cards h2 {
+    background: #d63c03;
+    background-size: cover;
+    padding: 5px;
+    color: #f0f0f0;
+    margin: 10px;
+    border-radius: 3px;
+}
 .header-container  {
     margin: 0 auto ;
     width: 1px/1px;
@@ -47,17 +63,136 @@ body{
 }
 .header-container  .nav-items a{
     font-weight: 600;
+    font-size: 14px;
     color:#d63c03;
     text-decoration: none;
     letter-spacing: 1px;
     cursor: pointer;
     padding: 10px;
+    text-transform: uppercase;
 }
 /* fin header */
 
 /* Inicio Main */
 
 /* hero aqui */
+.hero-main-cointainer {
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.hero-main__img {
+    width:100%;
+    height: 100vh;
+    background-image: url(/assets/Img/bckgrnds/concert-background-wallpaper-.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+
+}
+.hero__title{
+    width: 300px;
+    color: #f0f0f0;
+    position: absolute;
+    z-index: 2;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 25px; 
+    letter-spacing: 1px;
+    background: #ec4407;
+    /* left: 15px; */
+    right: 20px;
+    top:160px;
+
+}
+.hero__subTitle{
+    width: 300px;
+    color: #f0f0f0;
+    position: absolute;
+    z-index: 2;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 25px; 
+    letter-spacing: 1px;
+    background: #ec4407;
+    /* left: 15px; */
+    left: 15px;
+    top:500px;
+}
+.eventos p {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #4b4b4b;
+    opacity: 75%;
+    color: #f0f0f0;
+    position: absolute;
+    z-index: 7;
+    top: 620px;
+    margin-left: 15px;
+}
+.hero-main-cointainer .heroParrafos{
+    width: 300px;
+    height: auto;
+    color: #f0f0f0;
+    top: 280px;
+    right: 170px;
+    position: absolute;
+    z-index: 4;
+    display:flex;
+    flex-direction: column;
+    gap: 125px;
+    align-items: center;
+    justify-content: center;
+    
+}
+ .hero-name{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 6;
+    color: #f0f0f0;
+    font-size: 50px;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+
+}
+.hero-name{
+    filter: drop-shadow(0 0 3px #000) ;
+}
+.hero-name span {
+    color: #d63c03;
+}
+.hero-main-cointainer a{
+    width: 300px;
+    color: #f0f0f0;
+    margin-top: 15px;
+    position: absolute;
+    z-index: 4;
+    text-align: left;
+    text-decoration: none;
+    font-weight: 500;
+    background: #535252;
+    background-size: contain;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 20px;
+    opacity: 65%;
+}
 .hero-container{
     max-width: 1200px;
     margin: 0 auto;
@@ -65,31 +200,61 @@ body{
     width:100%;
 }
 .hero__img {
-    width: 100%;
-    object-fit:fill;
-    z-index: 1;
+    width:100%;
+    height: 100vh;
+    background-image: url(/assets/Img/covers/bckgrndshero/Cruzando-el-Charco-4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    overflow: hidden;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+
 }
 
 /* cards */
-
+.cards-main {
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+.cards-main .card {
+    max-width: 300px;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    color: #f0f0f0;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.cards-main .card img{
+    width: 200px;
+    height: 200px;
+    
+}
 .cards {
     max-width: 1200px;
     margin: 0 auto;
     width: 1100px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 20px;
+    gap: 20 px;
     padding: 15px;  
     margin-top: 20px;
     color: #535252;
     justify-items: center;
     align-items: center;
-    
 
 }
-
 
 .cards .card {
     border-bottom:solid 3px #d63c03;
@@ -106,7 +271,7 @@ body{
     width: 250px;
     height: auto;
     z-index: 1;
-    box-shadow: 0 60px 60px -60px rgba(0, 6, 255, 0.5);
+    box-shadow: 0 60px 60px -60px rgba(44, 9, 128, 0.5);
     border-radius: 4px;
     object-fit: cover;
     width: 100%;
@@ -131,7 +296,7 @@ body{
     font-weight: 700;
     color: #f0f0f0;
     box-shadow:  rgba(0,0,0, 0.5);
-    background: ;
+/*     background:  */;
     z-index: 2;
     width: 100%;
     display: flex;
@@ -146,6 +311,7 @@ body{
 .cards .card .card-imgs:hover{
     transform: perspective(250px)
     rotatex(10deg);
+    backdrop-filter: blur(90%);
 }
 
 .cards .card .card-imgs::before{
@@ -156,9 +322,11 @@ body{
     );
     opacity: 0;
     transition: all .3s;
+    
 }
 .cards .card .card-imgs:hover::before{
     opacity: 1;
+    
 }
 
 .cards .card .card-imgs:hover .img-frnt{
@@ -218,6 +386,143 @@ body{
     letter-spacing: .5px;
 }
 /* footer */
-.main-footer{
-    color: #535252;
+
+.footer {
+    margin: 0 auto;
+    width: 100%;
+    background: #000;
+}
+
+.footer .grupo-1 {
+    /* max-width: 1200px; */
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 35px 0px;
+    justify-items: center;
+}
+
+.footer .grupo-1 .box figure {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .grupo-1 .box figure img {
+    width: 160px;
+    height: 140px;
+    background: #fff;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.footer .grupo-1 .box h2 {
+    width: 100%;
+    color: #4b4b4b;
+    margin-bottom: 25px;
+    font-size: 20px;
+/*     margin-left: 15px; */
+    text-align: center;
+}
+
+.footer .grupo-1 .box P {
+    width: 100%;
+    color: #4b4b4b;
+    margin-bottom: 10px;
+    padding: 15px;
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.footer .grupo-1 .box .footer__contacto {
+    color: #4b4b4b;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    text-align: left;
+    
+}
+
+.footer .grupo-1 .box .footer__contacto a{
+    width: 100%;
+    color: #939292;
+    text-decoration: none;
+}
+
+.footer .grupo-1 .box .footer__contacto a i {
+    max-width: 300px;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding-bottom: 10px;
+    text-decoration: none;
+    
+}
+
+.footer .grupo-1 .box .logo {
+    width: 185px;
+    text-align: center;
+    background-color: #fff;
+    background-size: cover;
+    border: solid 1px #fff;
+}
+.footer .grupo-1 .box .logo span {
+    background: #000;
+    color: #fff;
+}
+
+.footer .grupo-1 .box .redes  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer .grupo-1 .box .redes a {
+    display: inline-block;
+    text-decoration: none;
+    width: 55px;
+    height: 55px;
+    line-height: 45px;
+    color: #FFFFFF;
+    margin-right: 10px;
+    background-color: transparent;
+    text-align: center;
+    transition: all 300ms ease;
+    place-content: center;
+}
+
+.footer .grupo-1 .box .info__contacto {
+    margin: 0 auto;
+    display: block;
+    column-gap: 5px;
+    justify-content: flex-end;
+    align-items: center;
+    color: #4b4b4b;
+    margin-bottom: 5px;
+    margin-left: 5px;
+
+}
+
+.footer .grupo-1 .box .redes a:hover {
+    color: #1e50ff;
+}
+
+.footer .grupo-2 {
+    color: #FFFFFF;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.footer .grupo-2 small {
+    font-size: 15px;
+}
+
+.footer .grupo-1 iframe {
+    width: 300px;
+    height: 250px;
 }
