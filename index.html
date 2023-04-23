@@ -6,28 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/mediaquery.css">
     <script src="https://kit.fontawesome.com/1ed3578477.js" crossorigin="anonymous"></script>
     <title>Rock Hola!</title>
 </head>
 
 <body>
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <img src="./assets/Img/CD_icon_test.svg" alt="">
-                <h2>Rock <span>Hola!</span> </h2>
-            </div>
-            <!-- navMenu -->
-            <div class="nav-container">
-                <div class="nav-items">
-                    <a href="/index.html">Home</a>
-                    <a href="#">Player</a>
-                    <a href="#">Discos</a>
-                    <a href="#">Novedades</a>
-                    <a href="#">Contacto</a>
+    <header class="header-container header__main">
+            <nav id="home" class="navbar-container">
+                <div class="logo">
+                    <img src="./assets/Img/CD_icon_test.svg" alt="">
+                    <a href="index.html">
+                        <h2>Rock <span>Hola!</span></h2>
+                    </a>
                 </div>
-            </div>
-        </div>
+                <input type="checkbox" id="btn-menu">
+                <label for="btn-menu" class="lbl-menu">
+                    <span id="spn1"></span>
+                    <span id="spn2"></span>
+                    <span id="spn3"></span>
+                </label>
+                <div class="nav__menu">
+                    <ul>
+                        <li><a href="/index.html" class="nav__items">Home</a></li>
+                        <li><a href="#" class="nav__items">Player</a></li>
+                        <li><a href="#" class="nav__items">Discos</a></li>
+                        <li><a href="#" class="nav__items">Novedades</a></li>
+                        <li><a href="#" class="nav__items">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
     </header>
 
     <main>
@@ -43,13 +51,15 @@
                 <h1 class="hero__title">Ultimas Novedades
                 </h1>
                 <div class="heroParrafos">
-                    <p><a href="/bandcec.html"><i class="fa-solid fa-volume-high fa-beat-fade" style="color: #e48111;"></i>
+                    <p><a href="/bandcec.html"><i class="fa-solid fa-volume-high fa-beat-fade"
+                                style="color: #e48111;"></i>
                             Escucha lo nuevo de Cruzando el Charco,
                             La banda Platense prepara una gran fiesta y llega al Luna Park.
                             Ver mas...</a>
                     </p>
                     <p>
-                        <a href="#"><!-- <i class="fa-solid fa-volume-high fa-beat-fade" style="color: #e48111;"></i> -->La Renga
+                        <a href="#"><!-- <i class="fa-solid fa-volume-high fa-beat-fade" style="color: #e48111;"></i> -->La
+                            Renga
                             un paseo por su discografia.
                             Ver mas...</a>
                     </p>
@@ -70,15 +80,18 @@
         <div class="cards-main">
             <div class="card">
                 <img src="/assets/Img/stadiums/granrex-02.jpg" alt="teatro-gran-rex">
-                <p><i class="fa-solid fa-ticket fa-shake" style="color: #e34d0d;"></i>Consegui tus entradas para los eventos en el teatro Gran Rex</p>
+                <p><i class="fa-solid fa-ticket fa-shake" style="color: #e34d0d;"></i>Consegui tus entradas para los
+                    eventos en el teatro Gran Rex</p>
             </div>
             <div class="card">
                 <img src="/assets/Img/stadiums/Luna-Park.jpg" alt="teatro-luna-park">
-                <p><i class="fa-solid fa-ticket fa-shake" style="color: #e34d0d;"></i>Consegui tus entradas para los eventos en el teatro Luna Park</p>
+                <p><i class="fa-solid fa-ticket fa-shake" style="color: #e34d0d;"></i>Consegui tus entradas para los
+                    eventos en el teatro Luna Park</p>
             </div>
             <div class="card">
                 <img src="/assets/Img/stadiums/movistarArena.jpg" alt="movistar-arena">
-                <p><i class="fa-solid fa-ticket fa-shake" style="color: #e34d0d;"></i>Consegui tus entradas para los eventos en el teatro Movistar Arena</p>
+                <p><i class="fa-solid fa-ticket fa-shake" style="color: #e34d0d;"></i>Consegui tus entradas para los
+                    eventos en el teatro Movistar Arena</p>
             </div>
 
         </div>

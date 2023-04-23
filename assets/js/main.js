@@ -34,6 +34,7 @@ tryMeLq.addEventListener('mouseleave', () => {
     audiolo.currentTime = 0;
 }
 ) 
+
 /* Audio : El trato */
 let tryMeTrato = document.querySelector('.elTrato');
  let audioTra = document.getElementsByTagName('audio');
@@ -48,6 +49,8 @@ tryMeTrato.addEventListener('mouseenter', () => {
 tryMeTrato.addEventListener('mouseleave', () => {
 
     audioTra[2].pause()
+    audioTra.currentTime = 0;
+    
     
     audioTra.currentTime = 0;
 }

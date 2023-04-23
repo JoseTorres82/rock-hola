@@ -12,24 +12,31 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-container">
+    <header class="header-container header__main">
+        <nav id="home" class="navbar-container">
             <div class="logo">
                 <img src="./assets/Img/CD_icon_test.svg" alt="">
-                <h2>Rock <span>Hola!</span> </h2>
+                <a href="index.html">
+                    <h2>Rock <span>Hola!</span></h2>
+                </a>
             </div>
-            <!-- navMenu -->
-            <div class="nav-container">
-                <div class="nav-items">
-                    <a href="/index.html">Home</a>
-                    <a href="#">Player</a>
-                    <a href="#">Discos</a>
-                    <a href="#">Novedades</a>
-                    <a href="#">Contacto</a>
-                </div>
+            <input type="checkbox" id="btn-menu">
+            <label for="btn-menu" class="lbl-menu">
+                <span id="spn1"></span>
+                <span id="spn2"></span>
+                <span id="spn3"></span>
+            </label>
+            <div class="nav__menu">
+                <ul>
+                    <li><a href="/index.html" class="nav__items">Home</a></li>
+                    <li><a href="#" class="nav__items">Player</a></li>
+                    <li><a href="#" class="nav__items">Discos</a></li>
+                    <li><a href="#" class="nav__items">Novedades</a></li>
+                    <li><a href="#" class="nav__items">Contacto</a></li>
+                </ul>
             </div>
-        </div>
-    </header>
+        </nav>
+</header>
 
     <main>
         <div class="hero-main-cointainer">
@@ -40,15 +47,10 @@
                 <h1 class="hero__title">Bio
                 </h1>
                 <div class="heroParrafos" style="opacity: 90%;"> 
-                    <p><a href="/index.htm"><i class="fa-solid fa-volume-high fa-beat-fade" style="color: #e48111;"></i>
+                    <p><a href="/index.html"><i class="fa-solid fa-volume-high fa-beat-fade" style="color: #e48111;"></i>
                         Cruzando el Charco nace en 2012 en la ciudad de La Plata, buscando amalgamar diferentes estilos musicales, fusionando el rock con el candombe, la cumbia, el reggae, el pop y  el funk, para llegar a un sonido firme y contundente. La banda de rock-pop está integrada por Lago Francisco en voz, Nahuel Piscitelli en guitarra y coros, Juan Matías Menchón en bajo, Ignacio Marchesotti en percusión; y Matías Perroni en batería.
                         A principios de  2012 graban y mezclan su álbum debut “Perdonar”.</a>
                     </p>
-                    <!-- <p>
-                        <a href="#"><i class="fa-solid fa-volume-high fa-beat-fade" style="color: #e48111;"></i>La Renga
-                            un paseo por su discografia.
-                            Ver mas...</a>
-                    </p> -->
                 </div>
                 <h2 class="hero__subTitle">
                     Proximos eventos
